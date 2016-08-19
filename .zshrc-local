@@ -1,0 +1,15 @@
+alias open='xdg-open'
+
+# add environment modules support for zsh
+ # https://en.wikipedia.org/wiki/Environment_Modules_%28software%29#bash.2C_ksh.2C_zsh.2C_sh_automatic_modules_initialization
+ case "$0" in
+        -zsh|zsh|*/zsh) modules_shell=zsh ;;
+        -su|su|*/su)  modules_shell=none ;;
+                  *)  modules_shell=sh ;;
+ esac
+
+ if [ "${modules_shell}" != "none" ] ; then
+   . /sw/share/Modules/init/${modules_shell}
+ fi
+
+ export TERM=xterm-256color 
