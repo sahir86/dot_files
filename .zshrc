@@ -1,6 +1,16 @@
 # Path to your oh-my-zsh installation.
  export ZSH=/home/zmaw/m300510/.oh-my-zsh
  source $HOME/.zshrc-local
+
+# Add Sahir's user_binaries folder to the path.
+export PATH=$PATH:~/user_binaries 
+#export PYTHONPATH=$PYTHONPATH:~/user_binaries 
+export PYTHONPATH="~/user_binaries:$PYTHONPATH"
+
+# Alias for calling the dropbox CLI script.
+alias dbox=dropbox.py
+
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -106,3 +116,7 @@ local return_status="%{$fg[red]%}%(?..=)%{$reset_color%}"
 PROMPT='${prompt_jobs}${prompt_host}$(git_prompt_info) %~ ${prompt_root} '
 
 RPROMPT="${return_status}%*"
+
+# Load appropriate python version from CIS software tree - Sahir.
+
+module load python/2.7-ve6
