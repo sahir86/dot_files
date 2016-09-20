@@ -2,20 +2,6 @@
  export ZSH=/home/zmaw/m300510/.oh-my-zsh
  source $HOME/.zshrc-local
 
-# Add Sahir's user_binaries folder to the path.
-export PATH=$PATH:~/user_binaries 
-#export PYTHONPATH=$PYTHONPATH:~/user_binaries 
-export PYTHONPATH="~/user_binaries:$PYTHONPATH"
-
-# Alias for calling the dropbox CLI script.
-alias dbox=dropbox.py
-
-# Post install Latex commands:
-
-export PATH=~/user_binaries/texlive/2016/bin/x86_64-linux:$PATH
-export INFOPATH=~/user_binaries/texlive/2016/texmf-dist/doc/info:$INFOPATH
-export MANPATH=~/user_binaries/texlive/2016/texmf-dist/doc/man:$MANPATH
-
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
