@@ -133,6 +133,9 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" Press Space to turn off highlighting and clear any message already displayed.
+set hlsearch
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 "" unicode symbols
 "let g:airline_left_sep = '»'
