@@ -1,13 +1,12 @@
 # Path to your oh-my-zsh installation.
- export ZSH=/home/zmaw/m300510/.oh-my-zsh
+ export ZSH=$HOME/.oh-my-zsh
  source $HOME/.zshrc-local
-
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="af-magic"
+#ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -108,7 +107,3 @@ local return_status="%{$fg[red]%}%(?..=)%{$reset_color%}"
 PROMPT='${prompt_jobs}${prompt_host}$(git_prompt_info) %~ ${prompt_root} '
 
 RPROMPT="${return_status}%*"
-
-# Load appropriate python version from CIS software tree - Sahir.
-
-module load python/2.7-ve6
